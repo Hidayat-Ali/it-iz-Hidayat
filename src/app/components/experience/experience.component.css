@@ -1,0 +1,46 @@
+/* example.component.css */
+.experience {
+  padding: 14rem;
+  background: var(--gray-200);
+}
+
+.designation {
+  color: var(--gray-600);
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1vw;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.duration {
+  color: var(--gray-600);
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.experience-card {
+  border-radius: 12px;
+  background: var(--gray-200,);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06), 0px 4px 3px 0px rgba(0, 0, 0, 0.07);
+}
+
+.experience-btn .btn {
+  border-radius: 12px;
+  background: var(--button-color);
+  color: var(--gray-600);
+  font-family: Inter;
+  font-size: 1.1vw;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.experience-summary {
+  color: var(--gray-600);
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.3vw;
+  font-style: normal;
+  font-weight: 400;
+}

@@ -1,0 +1,78 @@
+/* example.component.css */
+.footer {
+  background: var(--gray-50);
+  padding-bottom: 8vw;
+}
+
+.footer-btn .btn {
+  color: var(--gray-600);
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  border-radius: 12px;
+  background: var(--button-color);
+}
+
+.footer-text {
+  color: var(--gray-600);
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2vw; /* Using a CSS variable for responsive font size */
+  font-style: normal;
+  font-weight: 400;
+  width: 40%;
+  margin: auto;
+}
+
+.email {
+  color: var(--gray-600);
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.3vw; /* Using a CSS variable for responsive font size */
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: -0.72px;
+}
+
+.phone {
+  color: var(--gray-600);
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.3vw; /* Using a CSS variable for responsive font size */
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: -0.72px;
+}
+
+.contact-icons {
+  color: var(--gray-600);
+  font-family: 'Inter', sans-serif;
+  font-size: 1.3vw; /* Using a CSS variable for responsive font size */
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.copy-right {
+  background: var(--gray-200);
+}
+
+.copy-right p {
+  color: var(--gray-600);
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1vw; /* Using a CSS variable for responsive font size */
+  font-style: normal;
+  font-weight: 400;
+}
+
+.copy-right p span {
+  color: #EF4444;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1vw; /* Using a CSS variable for responsive font size */
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}

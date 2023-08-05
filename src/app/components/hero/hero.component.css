@@ -3,7 +3,7 @@
     background-color: var(--gray-50);
 }
 .name{
-    color: var(--gray-900, #111827);
+    color: var(--headding-color);
     font-family: 'Inter', sans-serif;     
     font-size: 4vw;
     font-style: normal;
@@ -47,4 +47,15 @@ font-weight: 400;
      align-items: center;
     gap: 1vw;
     padding-left: 9px;
+}
+.img img{ 
+box-shadow: var(--img-box-shadow);
+
+
+}
+
+@media (max-width:780px){
+    .mobile-view-hero{
+        flex-direction: column-reverse;
+    }
 }

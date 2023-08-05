@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ThemeService } from 'src/app/services/theme.service';
-
+import gsap from 'gsap';
 
 @Component({
   selector: 'app-header',
@@ -9,14 +9,26 @@ import { ThemeService } from 'src/app/services/theme.service';
 })
 export class HeaderComponent {
 
-  constructor(private themeService: ThemeService) { }
+  ngAfterViewInit() {
 
+    gsap.from('.navbar-brand', { x: -1000, duration: 1.5 });
+    gsap.from('.vertical-line', { y: -1000, duration: 1.5 });
+    gsap.from('.dark-mode', { x: 1000, duration: 1.5 });
+    gsap.from('.download-cv', { x: 1000, duration: 1.5 });
+
+  }
+
+  constructor(private themeService: ThemeService) { }
+  isDarkMode: boolean = false;
   toggleMode() {
     this.themeService.toggleMode();
-    console.log('i am called')
+    this.isDarkMode = !this.isDarkMode;
+
   }
   isDarkTheme(): boolean {
     return this.themeService.isDarkTheme();
   }
+
+
 
 }

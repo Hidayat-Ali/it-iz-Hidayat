@@ -76,3 +76,9 @@
 .work-detail ul{
 color: var(--gray-600);
 }
+@media (max-width:992px){
+  .experience-btn .btn{
+    font-size: 3.5vw;
+
+  }
+}

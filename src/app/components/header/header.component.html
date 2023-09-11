@@ -65,13 +65,41 @@
 
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">...</div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                        Close
-                    </button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                <div class="modal-body">
+
+                    <div class="container-fluid">
+
+                        <div class="">
+                            <ul class="mobile-view">
+                                <li>About</li>
+                                <li>work</li>
+                                <li>contact</li>
+
+                                <div class="dark-mode">
+                                    <button *ngIf="isDarkMode" class="btn dark-mode-btn" (click)="toggleMode()">
+                                        <span class="h1">Dark</span> &nbsp;&nbsp;&nbsp;<img
+                                            src="assets/images/header/dark-icon.svg" alt="">
+                                    </button>
+                                    <button *ngIf="!isDarkMode" class="btn dark-mode-btn" (click)="toggleMode()">
+                                        <span class="h1">Light</span> &nbsp;&nbsp;&nbsp;<img
+                                            src="assets/images/header/light-icon.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="download-cv">
+                                    <button class=" btn download-cv-btn"> Download CV</button>
+                                </div>
+
+                            </ul>
+                        </div>
+                        <div class="image1 header-image "><img src="assets/images/hero/hidayat.jpg"
+                                class="img-fluid w-100" alt="" style="border-radius: 64% 26% 0% 26% / 66% 0% 25% 0%;
+
+"></div>
+
+
+                    </div>
                 </div>
+
             </div>
         </div>
     </div>

@@ -28,5 +28,23 @@ export class AboutUsComponent {
         scrub: true, // Smooth animation during scrolling
       }
     });
+
+
+
+    let image = document.querySelector('.img-left');
+
+    gsap.fromTo(image, {
+      scale: 0
+    }, {
+      scale: 1,
+      duration: 1,
+      scrollTrigger: {
+        trigger: image,
+        start: "-110% 70%",
+        end: "-30% 40%",
+        scrub: 1.5,
+
+      }
+    });
   }
 }

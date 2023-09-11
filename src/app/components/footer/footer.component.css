@@ -6,7 +6,7 @@
 
 .footer-btn .btn {
   color: var(--gray-600);
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -19,16 +19,19 @@
   overflow: hidden;
 }
 
-
-
- .footer-btn .btn::before{
+.footer-btn .btn::before {
   content: "";
   position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.8) 70%, transparent 100%);
+  background: linear-gradient(
+    45deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.8) 70%,
+    transparent 100%
+  );
   animation: waveAnimation 2s linear infinite;
 }
 
@@ -44,7 +47,7 @@
 .footer-text {
   color: var(--gray-600);
   text-align: center;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1.2vw; /* Using a CSS variable for responsive font size */
   font-style: normal;
   font-weight: 400;
@@ -55,7 +58,7 @@
 .email {
   color: var(--gray-600);
   text-align: center;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1.3vw; /* Using a CSS variable for responsive font size */
   font-style: normal;
   font-weight: 600;
@@ -66,7 +69,7 @@
 .phone {
   color: var(--gray-600);
   text-align: center;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1.3vw; /* Using a CSS variable for responsive font size */
   font-style: normal;
   font-weight: 600;
@@ -76,7 +79,7 @@
 
 .contact-icons {
   color: var(--gray-600);
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1.3vw; /* Using a CSS variable for responsive font size */
   font-style: normal;
   font-weight: 400;
@@ -89,17 +92,25 @@
 
 .copy-right p {
   color: var(--gray-600);
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1.1vw; /* Using a CSS variable for responsive font size */
   font-style: normal;
   font-weight: 400;
 }
 
 .copy-right p span {
-  color: #EF4444;
-  font-family: 'Inter', sans-serif;
+  color: #ef4444;
+  font-family: "Inter", sans-serif;
   font-size: 1.1vw; /* Using a CSS variable for responsive font size */
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
+}
+@media screen and (max-width: 768px) {
+  .copy-right p {
+    font-size: 3.2vw;
+  }
+  .copy-right p span {
+    font-size: 3.2vw;
+  }
 }

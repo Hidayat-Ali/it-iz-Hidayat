@@ -87,6 +87,17 @@ export class HeroComponent {
       }
     );
 
+    let element = document.querySelector('.hero-img');
+
+    gsap.fromTo(element, {
+      xPercent: 100,
+      autoAlpha: 0
+    }, {
+      xPercent: 0,
+      autoAlpha: 1,
+      duration: 1
+    });
+
   }
 
 }

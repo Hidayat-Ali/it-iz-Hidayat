@@ -1,0 +1,28 @@
+<div *ngIf="blogPost$ | async as blogPost">
+
+
+
+    <header class="container-fluid ks-page-header">
+        <h1 class="display-4 text-white ks-page-title">
+            {{blogPost.fields.title}}
+        </h1>
+    </header>
+
+    <main class="container my-5 ks-article-content">
+        <div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_default_style" data-a2a-scroll-show="400">
+            <a class="a2a_button_facebook"></a>
+            <a class="a2a_button_twitter"></a>
+            <a class="a2a_button_pinterest"></a>
+            <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+        </div>
+
+        <h2 class="display-5 ks-page-heading">{{blogPost.fields.urlHandle}}</h2>
+        <p class="mb-5 ks-fancy-letter" [innerHtml]="_returnHtmlFromRichText(blogPost.fields.content)">
+
+        </p>
+        <img src="https://picsum.photos/id/180/960/540"
+            alt="Open laptop computer with notebook and pen lying next to it" class="w-100 mb-5 ks-article-image">
+
+        <p class="mb-5">{{blogPost.fields.summary}}</p>
+    </main>
+</div>

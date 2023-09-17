@@ -1,0 +1,22 @@
+<div *ngIf="blogPost$ | async as blogPosts" class="py-1 latest-blogs">
+
+    <div class="container  ">
+        <div class=" text-center py-2"><button class="btn latest-btn">Latest Blogs</button></div>
+        <div class="row">
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4" *ngFor="let blogPost of blogPosts.items ">
+                <div class="card">
+                    <img class="card-img" [src]="blogPost.fields.bgImage.fields.file.url" alt=" Bologna">
+                    <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+                        <h4 class="card-title">{{blogPost.fields.title}} </h4>
+                        <h6 class="card-subtitle mb-2">{{blogPost.fields.urlHandle}}</h6>
+                        <p class="card-text">{{ blogPost.fields.summary }} </p>
+                        <div class="link d-flex">
+                            <a [routerLink]="['blog',blogPost.sys.id]" routerLinkActive="router-link-active"
+                                class=" text-white btn btn-dark">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -71,23 +71,29 @@
 
                         <div class="">
                             <ul class="mobile-view">
-                                <li>About</li>
+                                <li>About | Home</li>
                                 <li>work</li>
                                 <li>contact</li>
 
-                                <div class="dark-mode">
-                                    <button *ngIf="isDarkMode" class="btn dark-mode-btn" (click)="toggleMode()">
-                                        <span class="h1">Dark</span> &nbsp;&nbsp;&nbsp;<img
-                                            src="assets/images/header/dark-icon.svg" alt="">
-                                    </button>
-                                    <button *ngIf="!isDarkMode" class="btn dark-mode-btn" (click)="toggleMode()">
-                                        <span class="h1">Light</span> &nbsp;&nbsp;&nbsp;<img
-                                            src="assets/images/header/light-icon.svg" alt="">
-                                    </button>
-                                </div>
+                                <li>
+                                    <div class="dark-mode">
+                                        <button *ngIf="isDarkMode" class="btn dark-mode-btn" (click)="toggleMode()">
+                                            <span class="text-theme">Dark</span> &nbsp;&nbsp;&nbsp;<img
+                                                class="dark-icon-mobile" src="assets/images/header/dark-icon.svg"
+                                                alt="">
+                                        </button>
+                                        <button *ngIf="!isDarkMode" class="btn dark-mode-btn" (click)="toggleMode()">
+                                            <span class="text-theme">Light</span> &nbsp;&nbsp;&nbsp;<img
+                                                class="light-icon-mobile" src="assets/images/header/light-icon.svg"
+                                                alt="">
+                                        </button>
+                                    </div>
+                                </li>
+
                                 <div class="download-cv">
                                     <button class=" btn download-cv-btn"> Download CV</button>
                                 </div>
+
 
                             </ul>
                         </div>

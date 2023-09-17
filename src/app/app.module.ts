@@ -10,6 +10,11 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ThemeService } from './services/theme.service';
+import { BlogsComponent } from './components/blogs/blogs.component';
+import { LatestBlogComponent } from './components/latest-blog/latest-blog.component';
+import { HomeComponent } from './components/home/home.component';
+import { MarkdownModule } from 'ngx-markdown';
+
 
 @NgModule({
   declarations: [
@@ -19,11 +24,16 @@ import { ThemeService } from './services/theme.service';
     AboutUsComponent,
     SkillsComponent,
     ExperienceComponent,
-    FooterComponent
+    FooterComponent,
+    BlogsComponent,
+    LatestBlogComponent,
+    HomeComponent
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MarkdownModule.forRoot(),
   ],
   providers: [ThemeService],
   bootstrap: [AppComponent]

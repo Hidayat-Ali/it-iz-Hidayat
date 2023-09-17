@@ -1,9 +1,9 @@
-/* example.component.css */
-.skills {
+.latest-blogs {
   background-color: var(--gray-50);
   padding-bottom: 8vw;
 }
-.skills-btn {
+
+.latest-btn {
   border-radius: 12px;
   background: var(--button-color);
   padding: 4px 20px;
@@ -23,21 +23,7 @@
   overflow: hidden;
 }
 
-.skill-desc {
-  color: var(--gray-600);
-  text-align: center;
-  font-family: Inter;
-  font-size: 1.3vw; /* Using a CSS variable for responsive font size */
-  font-style: normal;
-  font-weight: 400;
-}
-
-.icon {
-  text-align: center;
-  margin-bottom: 2vw;
-}
-
-.skills-btn::before {
+.latest-btn::before {
   content: "";
   position: absolute;
   top: 0;

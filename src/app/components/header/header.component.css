@@ -47,6 +47,9 @@
   .modal-open-close {
     display: unset;
   }
+  .download-cv-btn {
+    margin-top: 3vw;
+  }
 }
 @media (max-width: 500px) {
   .navbar-brand img {
@@ -87,4 +90,19 @@
   list-style: none;
   font-size: 5vw;
   border-bottom: 2px dashed lightgray;
+}
+.text-theme {
+  text-transform: uppercase;
+  list-style: none;
+  font-size: 5vw;
+}
+.mobile-view {
+  padding-left: 0;
+}
+.dark-mode-btn {
+  padding: 0;
+}
+.dark-icon-mobile,
+.light-icon-mobile {
+  width: 20px;
 }

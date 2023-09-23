@@ -113,4 +113,8 @@
   .copy-right p span {
     font-size: 3.2vw;
   }
+  .footer-text {
+    font-size: 3vw;
+    width: 65%;
+  }
 }

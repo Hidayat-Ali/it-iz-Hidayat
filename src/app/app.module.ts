@@ -14,6 +14,7 @@ import { BlogsComponent } from './components/blogs/blogs.component';
 import { LatestBlogComponent } from './components/latest-blog/latest-blog.component';
 import { HomeComponent } from './components/home/home.component';
 import { MarkdownModule } from 'ngx-markdown';
+import { ContactComponent } from './components/contact/contact.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { MarkdownModule } from 'ngx-markdown';
     FooterComponent,
     BlogsComponent,
     LatestBlogComponent,
-    HomeComponent
+    HomeComponent,
+    ContactComponent
 
   ],
   imports: [

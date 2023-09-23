@@ -13,7 +13,7 @@
   font-family: Inter;
   font-size: 1.3vw;
   font-style: normal;
-  font-weight: 500;
+
   line-height: 20px;
 
   position: relative;
@@ -51,5 +51,8 @@
 @media (max-width: 992px) {
   .skills .btn {
     font-size: 3.5vw;
+  }
+  .latest-btn {
+    font-size: 3.3vw;
   }
 }

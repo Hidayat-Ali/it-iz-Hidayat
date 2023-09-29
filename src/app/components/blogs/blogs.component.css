@@ -63,3 +63,7 @@
     text-decoration: none;
   }
 }
+.gback {
+  margin-left: 10px;
+  text-transform: capitalize;
+}

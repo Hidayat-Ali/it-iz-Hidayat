@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Renderer2, ElementRef } from '@angular/core';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -8,6 +8,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
   styleUrls: ['./hero.component.css']
 })
 export class HeroComponent {
+  constructor(private renderer2: Renderer2, private el: ElementRef) { }
   ngAfterViewInit() {
     gsap.registerPlugin(ScrollTrigger);
     const tl = gsap.timeline({
@@ -16,7 +17,7 @@ export class HeroComponent {
       paused: true
     });
 
-    const textElement = document.querySelector('.animate-my-name');
+    const textElement = this.el.nativeElement.querySelector('.animate-my-name');
 
     if (textElement && textElement.textContent) {
       const textContent = textElement.textContent;

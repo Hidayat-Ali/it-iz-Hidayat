@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/it-iz-hidayat",
+            "outputPath": "dist/it-iz-Hidayat/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -103,6 +103,66 @@
             ],
             "scripts": []
           }
+        },
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/it-iz-Hidayat/server",
+            "main": "server.ts",
+            "tsConfig": "tsconfig.server.json"
+          },
+          "configurations": {
+            "production": {
+              "outputHashing": "media"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.development.ts"
+                }
+              ],
+              "optimization": false,
+              "sourceMap": true,
+              "extractLicenses": false,
+              "vendorChunk": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve-ssr": {
+          "builder": "@nguniversal/builders:ssr-dev-server",
+          "configurations": {
+            "development": {
+              "browserTarget": "it-iz-Hidayat:build:development",
+              "serverTarget": "it-iz-Hidayat:server:development"
+            },
+            "production": {
+              "browserTarget": "it-iz-Hidayat:build:production",
+              "serverTarget": "it-iz-Hidayat:server:production"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "prerender": {
+          "builder": "@nguniversal/builders:prerender",
+          "options": {
+            "routes": [
+              "/"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "it-iz-Hidayat:build:production",
+              "serverTarget": "it-iz-Hidayat:server:production"
+            },
+            "development": {
+              "browserTarget": "it-iz-Hidayat:build:development",
+              "serverTarget": "it-iz-Hidayat:server:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }
